@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*!
+ * print.css v1.0.0
+ * http://printstylesheet.com/
+ *
+ * Copyright (c) 2011 David Bushell
+ * Dual licensed under the BSD or MIT licenses: http://printstylesheet.com/license.txt
+ 
+ * Author: David Bushell
+ * http://dbushell.com/
+ * 
+ * Japanese translation: JOTAKI, Taisuke
+ * http://tekapo.com/
+ */
+
+/* この CSS をプリンターのような印刷用機器だけの利用に制限するため、メディアクエリを使います。 */
+@media only print
+{
+	/* ボディ内の要素をすべて隠します */
+	body * { display: none !important; }
+	/* ボディの後ろに紙を無駄にしないよう促す親切な注意書きを追加します */
+	body:after { content: "紙を無駄にするな !"; }
+}
